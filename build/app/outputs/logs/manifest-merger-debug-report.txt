@@ -1,19 +1,20 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:1:1-47:12
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:1:1-47:12
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:1:1-47:12
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:1:1-47:12
-MERGED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:1:1-47:12
-MERGED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
-MERGED from [:flutter_plugin_android_lifecycle] /home/vignesh/Documents/Projects/dentalRnD/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:path_provider] /home/vignesh/Documents/Projects/dentalRnD/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:shared_preferences] /home/vignesh/Documents/Projects/dentalRnD/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:1:1-47:12
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:1:1-47:12
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:1:1-47:12
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:1:1-47:12
+MERGED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:1:1-47:12
+MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:flutter_plugin_android_lifecycle] /home/vignesh/Documents/GitHub/Dental-RND/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:webview_flutter] /home/vignesh/Documents/GitHub/Dental-RND/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] /home/vignesh/Documents/GitHub/Dental-RND/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:shared_preferences] /home/vignesh/Documents/GitHub/Dental-RND/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.firebase:firebase-storage:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/5706e00bfaed16f6725138c1231f180e/jetified-firebase-storage-17.0.0/AndroidManifest.xml:15:1-37:12
@@ -28,6 +29,7 @@ MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/vignesh/.g
 MERGED from [com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/0d479d426be2ba1f4bdfee2f9a7aa519/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/28c8df72e3e98cf2af337943db219b6d/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.webkit:webkit:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/3af8640ce562b4b4e0a6111579ef27f6/webkit-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/4881302d1430cfdcaa10344523e2ce7f/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/5a1de8d3594afca67ad230d5d25a73b9/activity-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/31cd047ed3ec37dce69ba9f16e10a05d/customview-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -44,37 +46,37 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/vignesh/.gradle
 MERGED from [io.grpc:grpc-android:1.21.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/34268753bded0b91ecc4a1af1815ce82/grpc-android-1.21.0/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/b6af014a2c327ee5be3b6ff514bba95a/firebase-database-collection-17.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/a354eb536d40d44205558c740c860a07/protolite-well-known-types-17.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:2:5-36
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:2:5-36
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:1:1-47:12
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:1:1-47:12
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:1:1-47:12
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:1:1-47:12
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:1:11-69
 application
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:8:5-46:19
-MERGED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:8:5-46:19
+MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:22:5-38:19
@@ -102,75 +104,77 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/vigne
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:10:9-34
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:10:9-34
 	android:icon
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:11:9-43
 	android:name
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:9:9-57
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:9:9-57
 activity#com.example.dentalRnD.MainActivity
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:12:9-40:20
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:12:9-40:20
 	android:launchMode
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:14:13-43
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:14:13-43
 	android:hardwareAccelerated
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:17:13-47
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:17:13-47
 	android:windowSoftInputMode
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:18:13-55
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:18:13-55
 	android:configChanges
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:16:13-163
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:16:13-163
 	android:theme
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:15:13-47
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:15:13-47
 	android:name
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:13:13-41
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:13:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:23:13-26:17
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:23:13-26:17
 	android:resource
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:25:15-52
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:25:15-52
 	android:name
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:24:15-70
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:24:15-70
 meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:32:13-35:17
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:32:13-35:17
 	android:resource
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:34:15-61
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:34:15-61
 	android:name
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:33:15-79
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:33:15-79
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:36:13-39:29
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:36:13-39:29
 action#android.intent.action.MAIN
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:37:17-68
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:37:17-68
 	android:name
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:37:25-66
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:38:17-76
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:38:17-76
 	android:name
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:38:27-74
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:38:27-74
 meta-data#flutterEmbedding
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:43:9-45:33
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:43:9-45:33
 	android:value
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:45:13-30
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:45:13-30
 	android:name
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:44:13-44
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:44:13-44
 uses-sdk
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml
-MERGED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] /home/vignesh/Documents/Projects/dentalRnD/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] /home/vignesh/Documents/Projects/dentalRnD/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] /home/vignesh/Documents/Projects/dentalRnD/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] /home/vignesh/Documents/Projects/dentalRnD/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences] /home/vignesh/Documents/Projects/dentalRnD/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences] /home/vignesh/Documents/Projects/dentalRnD/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/vignesh/Documents/GitHub/Dental-RND/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /home/vignesh/Documents/GitHub/Dental-RND/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] /home/vignesh/Documents/GitHub/Dental-RND/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] /home/vignesh/Documents/GitHub/Dental-RND/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /home/vignesh/Documents/GitHub/Dental-RND/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /home/vignesh/Documents/GitHub/Dental-RND/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/vignesh/Documents/GitHub/Dental-RND/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /home/vignesh/Documents/GitHub/Dental-RND/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:20:5-44
@@ -199,6 +203,8 @@ MERGED from [androidx.fragment:fragment:1.1.0] /home/vignesh/.gradle/caches/tran
 MERGED from [androidx.fragment:fragment:1.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/0d479d426be2ba1f4bdfee2f9a7aa519/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.loader:loader:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/28c8df72e3e98cf2af337943db219b6d/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/28c8df72e3e98cf2af337943db219b6d/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/3af8640ce562b4b4e0a6111579ef27f6/webkit-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/3af8640ce562b4b4e0a6111579ef27f6/webkit-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/4881302d1430cfdcaa10344523e2ce7f/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/4881302d1430cfdcaa10344523e2ce7f/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/5a1de8d3594afca67ad230d5d25a73b9/activity-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -231,16 +237,16 @@ MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/vign
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/b6af014a2c327ee5be3b6ff514bba95a/firebase-database-collection-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/a354eb536d40d44205558c740c860a07/protolite-well-known-types-17.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/a354eb536d40d44205558c740c860a07/protolite-well-known-types-17.0.0/AndroidManifest.xml:7:5-9:41
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml
-INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml:6:5-66
+ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml:6:5-66
 MERGED from [com.google.firebase:firebase-storage:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/5706e00bfaed16f6725138c1231f180e/jetified-firebase-storage-17.0.0/AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-storage:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/5706e00bfaed16f6725138c1231f180e/jetified-firebase-storage-17.0.0/AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/641174cb4d670a25b57a460e7a85bda8/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:14:5-67
@@ -248,17 +254,17 @@ MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/vignesh/.gradl
 MERGED from [com.google.firebase:firebase-database:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f0d749b1f49bee0f05d80fd9738baee2/jetified-firebase-database-17.0.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f0d749b1f49bee0f05d80fd9738baee2/jetified-firebase-database-17.0.0/AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from /home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-storage:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/5706e00bfaed16f6725138c1231f180e/jetified-firebase-storage-17.0.0/AndroidManifest.xml:30:9-34:19
@@ -276,61 +282,61 @@ MERGED from [com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/c
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
 	android:name
-		ADDED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+		ADDED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
 	android:grantUriPermissions
-		ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
 	android:authorities
-		ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
 	android:exported
-		ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
 	android:resource
-		ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
 	android:name
-		ADDED from [:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar
-ADDED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
+		ADDED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
+		ADDED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
 meta-data#com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+		ADDED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+		ADDED from [:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents

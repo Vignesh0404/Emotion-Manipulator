@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vignesh/Documents/Projects/dentalRnD/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml",
+            "outputFile": "/home/vignesh/Documents/GitHub/Dental-RND/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml",
             "map": [
                 {
                     "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/res/values-es/values.xml",

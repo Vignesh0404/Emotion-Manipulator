@@ -12,14 +12,14 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
-15-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+15-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+15-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-16-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
-16-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+16-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+16-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
 17    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 18-->[com.google.firebase:firebase-storage:17.0.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/5706e00bfaed16f6725138c1231f180e/jetified-firebase-storage-17.0.0/AndroidManifest.xml:26:5-79
@@ -32,30 +32,30 @@
 24         FlutterApplication and put your custom class here.
 25    -->
 26    <application
-26-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:8:5-46:19
+26-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:8:5-46:19
 27        android:name="io.flutter.app.FlutterApplication"
-27-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:9:9-57
+27-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:9:9-57
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 28-->[androidx.core:core:1.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/AndroidManifest.xml:24:18-86
 29        android:debuggable="true"
 30        android:icon="@mipmap/ic_launcher"
-30-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:11:9-43
+30-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:11:9-43
 31        android:label="dentalRnD" >
-31-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:10:9-34
+31-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:10:9-34
 32        <activity
-32-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:12:9-40:20
+32-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:12:9-40:20
 33            android:name="com.example.dentalRnD.MainActivity"
-33-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:13:13-41
+33-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:13:13-41
 34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-34-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:16:13-163
+34-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:16:13-163
 35            android:hardwareAccelerated="true"
-35-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:17:13-47
+35-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:17:13-47
 36            android:launchMode="singleTop"
-36-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:14:13-43
+36-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:14:13-43
 37            android:theme="@style/LaunchTheme"
-37-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:15:13-47
+37-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:15:13-47
 38            android:windowSoftInputMode="adjustResize" >
-38-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:18:13-55
+38-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:18:13-55
 39
 40            <!--
 41                 Specifies an Android theme to apply to this Activity as soon as
@@ -64,11 +64,11 @@
 44                 to determine the Window background behind the Flutter UI.
 45            -->
 46            <meta-data
-46-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:23:13-26:17
+46-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:23:13-26:17
 47                android:name="io.flutter.embedding.android.NormalTheme"
-47-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:24:15-70
+47-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:24:15-70
 48                android:resource="@style/NormalTheme" />
-48-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:25:15-52
+48-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:25:15-52
 49            <!--
 50                 Displays an Android View that continues showing the launch screen
 51                 Drawable until Flutter paints its first frame, then this splash
@@ -77,21 +77,21 @@
 54                 Flutter's first frame.
 55            -->
 56            <meta-data
-56-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:32:13-35:17
+56-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:32:13-35:17
 57                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-57-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:33:15-79
+57-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:33:15-79
 58                android:resource="@drawable/launch_background" />
-58-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:34:15-61
+58-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:34:15-61
 59
 60            <intent-filter>
-60-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:36:13-39:29
+60-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:36:13-39:29
 61                <action android:name="android.intent.action.MAIN" />
-61-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:37:17-68
-61-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:37:25-66
+61-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:37:17-68
+61-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:37:25-66
 62
 63                <category android:name="android.intent.category.LAUNCHER" />
-63-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:38:17-76
-63-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:38:27-74
+63-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:38:17-76
+63-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:38:27-74
 64            </intent-filter>
 65        </activity>
 66        <!--
@@ -99,50 +99,50 @@
 68             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 69        -->
 70        <meta-data
-70-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:43:9-45:33
+70-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:43:9-45:33
 71            android:name="flutterEmbedding"
-71-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:44:13-44
+71-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:44:13-44
 72            android:value="2" />
-72-->/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/AndroidManifest.xml:45:13-30
+72-->/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/AndroidManifest.xml:45:13-30
 73
 74        <service
-74-->[:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+74-->[:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 75            android:name="com.google.firebase.components.ComponentDiscoveryService"
-75-->[:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+75-->[:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 76            android:directBootAware="true"
 76-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
 77            android:exported="false" >
 77-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:35:13-37
 78            <meta-data
-78-->[:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+78-->[:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 79                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-79-->[:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+79-->[:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
 80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[:firebase_storage] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+80-->[:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 81            <meta-data
-81-->[:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+81-->[:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 82                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
-82-->[:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
+82-->[:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
 83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[:cloud_firestore] /home/vignesh/Documents/Projects/dentalRnD/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+83-->[:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 84            <meta-data
-84-->[:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+84-->[:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
-85-->[:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
+85-->[:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
 86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[:firebase_database] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+86-->[:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 87            <meta-data
-87-->[:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+87-->[:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 88                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-88-->[:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+88-->[:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
 89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[:firebase_auth] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+89-->[:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 90            <meta-data
-90-->[:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+90-->[:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-91-->[:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+91-->[:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
 92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[:firebase_core] /home/vignesh/Documents/Projects/dentalRnD/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+92-->[:firebase_core] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 93            <meta-data
 93-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:36:13-38:85
 94                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -170,21 +170,21 @@
 105        </service>
 106
 107        <provider
-107-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+107-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
 108            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-108-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+108-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
 109            android:authorities="com.example.dentalRnD.flutter.image_provider"
-109-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+109-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
 110            android:exported="false"
-110-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+110-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
 111            android:grantUriPermissions="true" >
-111-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+111-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
 112            <meta-data
-112-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+112-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
 113                android:name="android.support.FILE_PROVIDER_PATHS"
-113-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+113-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 114                android:resource="@xml/flutter_image_picker_file_paths" />
-114-->[:image_picker] /home/vignesh/Documents/Projects/dentalRnD/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+114-->[:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
 115        </provider>
 116
 117        <activity

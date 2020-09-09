@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vignesh/Documents/Projects/dentalRnD/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/home/vignesh/Documents/GitHub/Dental-RND/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/res/values-watch-v20/values.xml",

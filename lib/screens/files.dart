@@ -135,12 +135,25 @@ class PatientsList extends StatelessWidget {
                 itemCount: document.length,
                 itemBuilder: (BuildContext context, int i) {
                   String name = document[i].data['name'].toString();
-                  String id = document[i].data['id'].toString();
-                  String image = document[i].data['image'].toString();
-                  String timestamp = document[i].data['timestamp'].toString();
-                  String rms = document[i].data['rms'].toString();
+                  String id = document[i].data['ID'].toString();
+                  String appNo = document[i].data['app no'].toString();
                   String age = document[i].data['age'].toString();
-                  String phnum = document[i].data['phnum'].toString();
+                  String address = document[i].data['address'].toString();
+                  String gender = document[i].data['gender'].toString();
+                  String rmsDS =
+                      document[i].data['rms digital scale'].toString();
+                  String rmsPS =
+                      document[i].data['rms digital scale'].toString();
+                  String phnum =
+                      document[i].data['rms ps scale score'].toString();
+                  String vpt = document[i].data['vpt scale score'].toString();
+                  String fis = document[i].data['fis scale score'].toString();
+                  String rmsBS = document[i].data['rms blind score'].toString();
+                  String webUrl = document[i].data['url'].toString();
+                  String date = document[i].data['date'].toString();
+                  String time = document[i].data['time'].toString();
+                  String uid = document[i].data['uid'].toString();
+
                   //print(name);
                   return Dismissible(
                     key: new Key(document[i].documentID),
@@ -162,9 +175,21 @@ class PatientsList extends StatelessWidget {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (BuildContext context) => PatientDetails(
                                   name: name,
+                                  id: id,
+                                  appNo: appNo,
+                                  address: address,
+                                  gender: gender,
+                                  rmsDS: rmsDS,
+                                  rmsPS: rmsPS,
+                                  vpt: vpt,
+                                  fis: fis,
+                                  rmsBS: rmsBS,
                                   age: age,
+                                  phnum: phnum,
+                                  date: date,
+                                  time: time,
+                                  img: webUrl,
                                   index: document[i].reference,
-                                  //phnum: ,
                                 )));
                       },
                       child: Container(
@@ -180,8 +205,8 @@ class PatientsList extends StatelessWidget {
                           //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             CircleAvatar(
-                              backgroundImage: AssetImage(
-                                'assets/home1.png',
+                              backgroundImage: NetworkImage(
+                                webUrl,
                               ),
                               minRadius: 40,
                               backgroundColor: Colors.white,
@@ -231,16 +256,15 @@ class PatientsList extends StatelessWidget {
                                 ),
                                 Row(
                                   children: <Widget>[
-                                    Text(
-                                      "Appoinment Date :",
-                                      style: TextStyle(
-                                          fontFamily: 'Poppins',
-                                          fontWeight: FontWeight.w300,
-                                          fontSize: 12),
-                                    ),
-                                    Text(
-                                      "21/07/20",
-                                      overflow: TextOverflow.fade,
+                                    Container(
+                                      width: 230,
+                                      child: Text(
+                                        date + '  ' + time,
+                                        style: TextStyle(
+                                            //fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 13),
+                                      ),
                                     )
                                   ],
                                 )

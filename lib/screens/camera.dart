@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:dentalRnD/screens/addPatient.dart';
+import 'package:dentalRnD/widgets/loading.dart';
 import 'package:dentalRnD/widgets/navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -7,6 +8,10 @@ import 'package:path/path.dart';
 import 'package:photofilters/photofilters.dart';
 import 'package:image/image.dart' as imageLib;
 import 'package:image_picker/image_picker.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'package:dio/dio.dart';
+import 'package:http_parser/http_parser.dart';
 
 class Camera extends StatefulWidget {
   Camera({Key key}) : super(key: key);
@@ -16,7 +21,10 @@ class Camera extends StatefulWidget {
 }
 
 class _CameraState extends State<Camera> {
+  Dio dio = new Dio();
+  bool loading = false;
   File _image;
+
   final picker = ImagePicker();
 
   String fileName;
@@ -67,6 +75,7 @@ class _CameraState extends State<Camera> {
     _image = await ImagePicker.pickImage(source: ImageSource.gallery);
     fileName = basename(_image.path);
     var image = imageLib.decodeImage(_image.readAsBytesSync());
+
     image = imageLib.copyResize(image, width: 600);
     Map imagefile = await Navigator.push(
       context,
@@ -89,6 +98,42 @@ class _CameraState extends State<Camera> {
         _image = imagefile['image_filtered'];
       });
       print(_image.path);
+    }
+    await apifunction();
+  }
+
+  Future apifunction() async {
+    String base64Image = base64Encode(_image.readAsBytesSync());
+    var url = 'http://192.168.1.8/api';
+    final response = await http.post(
+      url,
+      body: jsonEncode({
+        'image': base64Image,
+      }),
+      headers: {'Content-Type': "application/json"},
+    );
+    print('StatusCode : ${response.statusCode}');
+    print('Return Data : ${response.body}');
+  }
+
+  Future sendImage() async {
+    try {
+      String imageName = _image.path.split('/').last;
+      print(imageName);
+      FormData formData = new FormData.fromMap({
+        "image": await MultipartFile.fromFile(_image.path,
+            filename: imageName, contentType: new MediaType('image', 'jpg')),
+        "type": "image/jpg"
+      });
+      Response response = await dio.post("path",
+          data: formData,
+          options: Options(headers: {
+            "accept": '*/*',
+            "Authorization": "Bearer accesstoken",
+            "Content-Type": "multipart/form-data"
+          }));
+    } catch (e) {
+      print(e);
     }
   }
 

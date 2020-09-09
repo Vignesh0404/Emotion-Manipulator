@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vignesh/Documents/Projects/dentalRnD/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/vignesh/Documents/GitHub/Dental-RND/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/values/values.xml",
@@ -23,6 +23,25 @@
                     }
                 },
                 {
+                    "source": "/home/vignesh/Documents/GitHub/Dental-RND/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "134,777",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "426,937"
+                    },
+                    "to": {
+                        "startLines": "113,118",
+                        "startColumns": "4,4",
+                        "startOffsets": "8645,8942",
+                        "endLines": "117,120",
+                        "endColumns": "12,12",
+                        "endOffsets": "8937,9102"
+                    }
+                },
+                {
                     "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/res/values/values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -40,22 +59,20 @@
                     }
                 },
                 {
-                    "source": "/home/vignesh/Documents/Projects/dentalRnD/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/vignesh/Documents/GitHub/Dental-RND/build/app/generated/res/google-services/debug/values/values.xml",
                     "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "134,777",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "426,937"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,309,391,495,604,724,823",
+                        "endColumns": "143,109,81,103,108,119,98,75",
+                        "endOffsets": "194,304,386,490,599,719,818,894"
                     },
                     "to": {
-                        "startLines": "113,118",
-                        "startColumns": "4,4",
-                        "startOffsets": "8645,8942",
-                        "endLines": "117,120",
-                        "endColumns": "12,12",
-                        "endOffsets": "8937,9102"
+                        "startLines": "104,105,106,107,108,109,110,111",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "7730,7874,7984,8066,8170,8279,8399,8498",
+                        "endColumns": "143,109,81,103,108,119,98,75",
+                        "endOffsets": "7869,7979,8061,8165,8274,8394,8493,8569"
                     }
                 },
                 {
@@ -75,23 +92,6 @@
                         "endLines": "2,3,4,5,6,7,8,9,86,87,88,89,90,91,92,93,95,96,97,98,99,100,101,102,103,272,291",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
                         "endOffsets": "190,270,360,450,530,611,691,771,5497,5678,5803,5910,6090,6213,6329,6432,6787,6892,7073,7198,7373,7521,7584,7646,7725,17720,18137"
-                    }
-                },
-                {
-                    "source": "/home/vignesh/Documents/Projects/dentalRnD/build/app/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,309,391,495,604,724,823",
-                        "endColumns": "143,109,81,103,108,119,98,75",
-                        "endOffsets": "194,304,386,490,599,719,818,894"
-                    },
-                    "to": {
-                        "startLines": "104,105,106,107,108,109,110,111",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "7730,7874,7984,8066,8170,8279,8399,8498",
-                        "endColumns": "143,109,81,103,108,119,98,75",
-                        "endOffsets": "7869,7979,8061,8165,8274,8394,8493,8569"
                     }
                 }
             ]

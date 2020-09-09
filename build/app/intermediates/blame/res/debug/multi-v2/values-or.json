@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vignesh/Documents/Projects/dentalRnD/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml",
+            "outputFile": "/home/vignesh/Documents/GitHub/Dental-RND/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml",
             "map": [
                 {
                     "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/res/values-or/values.xml",

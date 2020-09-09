@@ -48,8 +48,12 @@ dev_dependencies:
   photofilters: ^2.0.1  
   shared_preferences: ^0.5.8
   floating_action_row: ^0.1.0
-  http: ^0.12.2
+  http: 
   webview_flutter: ^0.3.22+1
+  path: 
+  dio: 
+  
+
 
 
 
@@ -85,6 +89,8 @@ flutter:
       fonts:
         - asset: fonts/Poppins-Black.ttf
         - asset: fonts/Poppins-Bold.ttf
+        - asset: fonts/Poppins-Light.ttf   
+          weight: 400
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
