@@ -13,7 +13,7 @@ bson==0.5.10
 certifi==2019.11.28
 cffi==1.14.1
 chardet==3.0.4
-chrome-gnome-shell==0.0.0
+#chrome-gnome-shell==0.0.0
 click==7.1.2
 cmake==3.18.0
 command-not-found==0.3
