@@ -1,0 +1,9 @@
+~ $ du -sh * | sort -hr
+22M	bin
+20K	cmd
+8.0K	logs
+8.0K	db
+4.0K	go.sum
+4.0K	go.mod
+4.0K	app.go
+4.0K	Procfile

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 import 'package:dentalRnD/screens/addPatient.dart';
 import 'package:dentalRnD/widgets/loading.dart';
@@ -46,6 +47,13 @@ class _CameraState extends State<Camera> {
   String fileName;
   List<Filter> filters = presetFiltersList;
 
+  // Widget _refresh() {
+  //   Timer timer = new Timer.periodic(new Duration(seconds: 1), (time) {
+  //     if (mounted) setState(() {});
+  //   });
+  //   return Container();
+  // }
+
   Future passImage(BuildContext context) async {
     var image = _image;
     print(image);
@@ -55,7 +63,7 @@ class _CameraState extends State<Camera> {
           builder: (context) => AddPatient(
             getImage: image,
           ),
-        ));
+        )).then((value) => setState(() {}));
   }
 
   Future cameraImage(context) async {
@@ -273,7 +281,8 @@ class _CameraState extends State<Camera> {
                         onPressed: () async {
                           //await sendImage();
                           await passImage(context);
-                        })
+                        }),
+                    //_refresh(),
                   ],
                 ),
               ),

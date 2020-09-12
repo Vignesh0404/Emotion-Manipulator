@@ -1,5 +1,7 @@
+import 'dart:async';
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dentalRnD/widgets/navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:path/path.dart';
@@ -31,11 +33,7 @@ class _AddPatientState extends State<AddPatient> {
   String rmsBS = '';
   String uid;
   String email;
-  Image sadImg;
-  Image smileImg;
-  Image smirkImg;
-  Image pokerImg;
-  Image sligthlysadImg;
+  AssetImage sadimg;
 
   @override
   void initState() {
@@ -49,19 +47,6 @@ class _AddPatientState extends State<AddPatient> {
     }).catchError((e) {
       print(e);
     });
-    // sadImg = Image.asset('faceswap/results/' + uid + '_input_sad.jpg',
-    //     fit: BoxFit.cover);
-    // smileImg = Image.asset('faceswap/results/' + uid + '_input_smile.jpg');
-    // smileImg = Image.asset('faceswap/results/' + uid + '_input_smirk.jpg');
-    // pokerImg = Image.asset('faceswap/results/' + uid + '_input_poker.jpg');
-    // sligthlysadImg =
-    //     Image.asset('faceswap/results/' + uid + '_input_sligthlysad.jpg');
-
-    // @override
-    // void didChangeDependencies(BuildContext context) {
-    //   precacheImage(sadImg.image, context);
-    //   super.didChangeDependencies();
-    // }
   }
 
   void _addData(BuildContext context) async {
@@ -73,15 +58,6 @@ class _AddPatientState extends State<AddPatient> {
     final String url = await taskSnapshot.ref.getDownloadURL();
     String webUrl = url.toString();
     print('the url is $webUrl');
-
-    // StorageReference firebaseStorageRefSad =
-    //     FirebaseStorage.instance.ref().child("$email/$name/" + 'sad.jpg');
-    // StorageUploadTask uploadTaskSad = firebaseStorageRefSad
-    //     .putFile(('faceswap/results/' + uid + '_input_poker.jpg') as File);
-    // StorageTaskSnapshot taskSnapshotSad = await uploadTaskSad.onComplete;
-    // final String sadurl = await taskSnapshotSad.ref.getDownloadURL();
-    // String sadimg = sadurl.toString();
-    // print('the sad img url is $sadimg');
 
     var dbTimeKey = new DateTime.now();
     var formatDate = new DateFormat('MMM d,yyyy');
@@ -112,7 +88,11 @@ class _AddPatientState extends State<AddPatient> {
         "time": time
       });
     });
-    Navigator.pop(context);
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Navigation(),
+        ));
   }
 
   @override
@@ -187,8 +167,9 @@ class _AddPatientState extends State<AddPatient> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              image: AssetImage(
-                                  'faceswap/results/' + uid + '_input_sad.jpg'),
+                              image: AssetImage('faceswap/results/' +
+                                  uid +
+                                  '_input_smirk.jpg'),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -200,8 +181,9 @@ class _AddPatientState extends State<AddPatient> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              image: AssetImage(
-                                  'faceswap/results/' + uid + '_input_sad.jpg'),
+                              image: AssetImage('faceswap/results/' +
+                                  uid +
+                                  '_input_poker.jpg'),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -214,8 +196,9 @@ class _AddPatientState extends State<AddPatient> {
                           shape: BoxShape.circle,
                           //borderRadius: BorderRadius.circular(5),
                           image: DecorationImage(
-                              image: AssetImage(
-                                  'faceswap/results/' + uid + '_input_sad.jpg'),
+                              image: AssetImage('faceswap/results/' +
+                                  uid +
+                                  '_input_sligthlysad.jpg'),
                               fit: BoxFit.fitHeight),
                         ),
                       ),
@@ -469,6 +452,7 @@ class _AddPatientState extends State<AddPatient> {
                                 SizedBox(
                                   height: 45,
                                 ),
+                                //_refresh()
                               ],
                             ),
                           ),
