@@ -12,6 +12,9 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:http_parser/http_parser.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:path/path.dart' as path;
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Camera extends StatefulWidget {
   Camera({Key key}) : super(key: key);
@@ -24,6 +27,19 @@ class _CameraState extends State<Camera> {
   Dio dio = new Dio();
   bool loading = false;
   File _image;
+  String uid = '';
+  @override
+  void initState() {
+    super.initState();
+    FirebaseAuth.instance.currentUser().then((value) {
+      setState(() {
+        this.uid = value.uid;
+        print(uid);
+      });
+    }).catchError((e) {
+      print(e);
+    });
+  }
 
   final picker = ImagePicker();
 
@@ -76,7 +92,7 @@ class _CameraState extends State<Camera> {
     fileName = basename(_image.path);
     var image = imageLib.decodeImage(_image.readAsBytesSync());
 
-    image = imageLib.copyResize(image, width: 600);
+    image = imageLib.copyResize(image, width: 420);
     Map imagefile = await Navigator.push(
       context,
       new MaterialPageRoute(
@@ -93,48 +109,22 @@ class _CameraState extends State<Camera> {
         ),
       ),
     );
+
     if (imagefile != null && imagefile.containsKey('image_filtered')) {
       setState(() {
         _image = imagefile['image_filtered'];
       });
       print(_image.path);
     }
-    await apifunction();
-  }
 
-  Future apifunction() async {
-    String base64Image = base64Encode(_image.readAsBytesSync());
-    var url = 'http://192.168.1.8/api';
-    final response = await http.post(
-      url,
-      body: jsonEncode({
-        'image': base64Image,
-      }),
-      headers: {'Content-Type': "application/json"},
-    );
-    print('StatusCode : ${response.statusCode}');
-    print('Return Data : ${response.body}');
+    sendImage();
   }
 
   Future sendImage() async {
-    try {
-      String imageName = _image.path.split('/').last;
-      print(imageName);
-      FormData formData = new FormData.fromMap({
-        "image": await MultipartFile.fromFile(_image.path,
-            filename: imageName, contentType: new MediaType('image', 'jpg')),
-        "type": "image/jpg"
-      });
-      Response response = await dio.post("path",
-          data: formData,
-          options: Options(headers: {
-            "accept": '*/*',
-            "Authorization": "Bearer accesstoken",
-            "Content-Type": "multipart/form-data"
-          }));
-    } catch (e) {
-      print(e);
-    }
+    String base64Image = base64Encode(_image.readAsBytesSync());
+    Response response = await Dio()
+        .post("http://192.168.1.8:3008/api?uid=" + uid, data: base64Image);
+    print(response);
   }
 
   @override
@@ -281,6 +271,7 @@ class _CameraState extends State<Camera> {
                     IconButton(
                         icon: Icon(Icons.arrow_forward),
                         onPressed: () async {
+                          //await sendImage();
                           await passImage(context);
                         })
                   ],

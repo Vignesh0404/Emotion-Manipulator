@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:floating_action_row/floating_action_row.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class PatientDetails extends StatefulWidget {
   PatientDetails(
@@ -52,6 +53,7 @@ class _PatientDetailsState extends State<PatientDetails> {
   String name;
   String age;
   String phnum;
+  String uid;
 
   void updatePatientData() {
     Firestore.instance.runTransaction((Transaction transaction) async {
@@ -68,6 +70,15 @@ class _PatientDetailsState extends State<PatientDetails> {
   @override
   void initState() {
     super.initState();
+
+    FirebaseAuth.instance.currentUser().then((value) {
+      setState(() {
+        this.uid = value.uid;
+        print(uid);
+      });
+    }).catchError((err) {
+      print(err);
+    });
     name = widget.name;
     age = widget.age;
     phnum = widget.phnum;
@@ -219,6 +230,15 @@ class _PatientDetailsState extends State<PatientDetails> {
                   color: Colors.black,
                 ),
               ),
+              actions: <Widget>[
+                IconButton(
+                    icon: Icon(
+                      Icons.info,
+                      color: Colors.black,
+                      size: 30,
+                    ),
+                    onPressed: () {})
+              ],
             ),
             backgroundColor: Colors.white,
             floatingActionButton: FloatingActionRow(
@@ -230,29 +250,75 @@ class _PatientDetailsState extends State<PatientDetails> {
                 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Container(
-                    //color: Colors.orange,
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 5.0, vertical: 20.0),
-                    height: MediaQuery.of(context).size.height * 0.25,
-                    width: double.infinity,
-                    child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 5,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            width: MediaQuery.of(context).size.width * 0.4,
-                            decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                    image: NetworkImage(widget.img),
-                                    fit: BoxFit.cover),
-                                border: Border.all(
-                                    color: index % 2 == 0
-                                        ? Colors.lightGreen
-                                        : Color(0xFF55BAD3),
-                                    width: 2.0)),
-                          );
-                        }),
+                    margin:
+                        EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
+                    height: 130,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: <Widget>[
+                        Container(
+                          width: 130,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                image: NetworkImage(widget.img),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5.0,
+                        ),
+                        Container(
+                          width: 130,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                image: NetworkImage(widget.img),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5.0,
+                        ),
+                        Container(
+                          width: 130,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                image: NetworkImage(widget.img),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5.0,
+                        ),
+                        Container(
+                          width: 130,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                image: NetworkImage(widget.img),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5.0,
+                        ),
+                        Container(
+                          width: 130,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            //borderRadius: BorderRadius.circular(5),
+                            image: DecorationImage(
+                                image: NetworkImage(widget.img),
+                                fit: BoxFit.fitHeight),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 10.0,
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(height: 20.0),
                   Padding(
@@ -263,7 +329,12 @@ class _PatientDetailsState extends State<PatientDetails> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            widget.name + ",  " + widget.age,
+                            '#' +
+                                widget.id +
+                                "  " +
+                                widget.name +
+                                ",  " +
+                                widget.age,
                             style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontWeight: FontWeight.bold,
@@ -280,7 +351,7 @@ class _PatientDetailsState extends State<PatientDetails> {
                                 size: 24,
                               ),
                               Text(
-                                'Anna Nagar, Chennai',
+                                ' ' + widget.address,
                                 style: TextStyle(fontFamily: 'Poppins'),
                               )
                             ],
@@ -289,7 +360,10 @@ class _PatientDetailsState extends State<PatientDetails> {
                             height: 8,
                           ),
                           Text(
-                            '  ' + widget.phnum,
+                            '  ' +
+                                widget.phnum +
+                                ',  Appointment Num: ' +
+                                widget.appNo,
                             style: TextStyle(fontFamily: 'Poppins'),
                           ),
                           SizedBox(height: 7),
@@ -299,15 +373,59 @@ class _PatientDetailsState extends State<PatientDetails> {
                           ),
                           SizedBox(height: 20),
                           Text(
-                            'About',
+                            'About,',
                             style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20),
                           ),
+                          Row(
+                            children: <Widget>[
+                              Text(
+                                'RMS Digital Scale: ' + widget.rmsDS + ' ,    ',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                ),
+                              ),
+                              Text(
+                                'RMS PS Scale: ' + widget.rmsPS + ' ,',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'RMS Blind Scale: ' + widget.rmsBS + '  ,',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Text(
+                                'VPT Scale: ' + widget.vpt + ' ,    ',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                ),
+                              ),
+                              Text(
+                                'FIS Scale: ' + widget.fis + ' ,',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                ),
+                              ),
+                            ],
+                          ),
                           SizedBox(height: 20),
                           Text(
-                            'Note',
+                            'Note,',
                             style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontWeight: FontWeight.bold,

@@ -261,7 +261,7 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///home/vignesh/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.11",
+      "rootUri": "file:///home/vignesh/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.14",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -434,7 +434,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-09-09T13:38:06.552510Z",
+  "generated": "2020-09-11T20:22:22.204530Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }

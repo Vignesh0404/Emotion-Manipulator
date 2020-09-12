@@ -52,6 +52,7 @@ dev_dependencies:
   webview_flutter: ^0.3.22+1
   path: 
   dio: 
+  path_provider: ^1.6.14  
   
 
 
@@ -71,6 +72,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - faceswap/results/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

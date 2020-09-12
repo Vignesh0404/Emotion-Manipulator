@@ -3,7 +3,7 @@ import os
 import cv2
 import dlib
 import argparse
-
+import tqdm
 import numpy as np
 
 from face_detection import face_detection
@@ -54,85 +54,114 @@ def select_face(im, r=10):
     return points - np.asarray([[x, y]]), (x, y, w, h), im[y:y+h, x:x+w]
 
 
+def faceswap(emotion, filename='sample.jpg'):
+    parser = argparse.ArgumentParser(description='FaceSwapApp')
+    #parser.add_argument('--src', required=True, help='Path for source image')
+    parser.add_argument('--dst', required=False, help='Path for target image')
+    parser.add_argument('--out', required=False,
+                        help='Path for storing output images')
+    parser.add_argument('--warp_2d', default=False,
+                        action='store_true', help='2d or 3d warp')
+    parser.add_argument('--correct_color', default=True,
+                        action='store_true', help='Correct color')
+    parser.add_argument('--no_debug_window', default=True,
+                        action='store_true', help='Don\'t show debug window')
+    args = parser.parse_args()
+    # filter
+    if emotion=="sad":
+        filter = 'assets/5.jpg'
+    elif emotion=="smile":
+        filter = 'assets/1.jpeg'
+    elif emotion=="smirk":
+        filter = 'assets/2.jpeg'
+    elif emotion=="sligthlysad":
+        filter = 'assets/4.jpg'
+    elif emotion=="poker":
+        filter = 'assets/3.jpg'
+    else:
+        return "err"
+
+    # Read images
+    filter_img = cv2.imread(filter)
+
+    dst_img = cv2.imread(filename)
+    # Select src face
+    src_points, src_shape, src_face = select_face(filter_img)
+    # Select dst face
+    dst_points, dst_shape, dst_face = select_face(dst_img)
+
+    w, h = dst_face.shape[:2]
+        
+    ### Warp Image
+    if not args.warp_2d:
+        ## 3d warp
+        warped_src_face = warp_image_3d(src_face, src_points[:48], dst_points[:48], (w, h))
+    else:
+        ## 2d warp
+        src_mask = mask_from_points(src_face.shape[:2], src_points)
+        src_face = apply_mask(src_face, src_mask)
+        # Correct Color for 2d warp
+        if args.correct_color:
+            warped_dst_img = warp_image_3d(dst_face, dst_points[:48], src_points[:48], src_face.shape[:2])
+            src_face = correct_colours(warped_dst_img, src_face, src_points)
+        # Warp
+        warped_src_face = warp_image_2d(src_face, transformation_from_points(dst_points, src_points), (w, h, 3))
+
+    ## Mask for blending
+    mask = mask_from_points((w, h), dst_points)
+    mask_src = np.mean(warped_src_face, axis=2) > 0
+    mask = np.asarray(mask*mask_src, dtype=np.uint8)
+
+    ## Correct color
+    if not args.warp_2d and args.correct_color:
+        warped_src_face = apply_mask(warped_src_face, mask)
+        dst_face_masked = apply_mask(dst_face, mask)
+        warped_src_face = correct_colours(dst_face_masked, warped_src_face, dst_points)
+        
+    ## Shrink the mask
+    kernel = np.ones((10, 10), np.uint8)
+    mask = cv2.erode(mask, kernel, iterations=1)
+    ##Poisson Blending
+    r = cv2.boundingRect(mask)
+    center = ((r[0] + int(r[2] / 2), r[1] + int(r[3] / 2)))
+    output = cv2.seamlessClone(warped_src_face, dst_face, mask, center, cv2.NORMAL_CLONE)
+
+    x, y, w, h = dst_shape
+    dst_img_cp = dst_img.copy()
+    dst_img_cp[y:y+h, x:x+w] = output
+    output = dst_img_cp
+
+    #dir_path = os.path.dirname(args.out)
+    #if not os.path.isdir(dir_path):
+    # os.makedirs(dir_path)
+
+    cv2.imwrite('results/'+filename[:-4]+'_'+emotion+'.jpg', output)
+
+    ## For debug
+    if not args.no_debug_window:
+        cv2.imshow("From", dst_img)
+        cv2.imshow("To", output)
+        cv2.waitKey(0)       
+        cv2.destroyAllWindows()
+
+# Driver for all faceswap
+def faceswap_all(filename):
+    emotions = ['sad',
+                'smile',
+                'smirk',
+                'sligthlysad',
+                'poker']
+    for i in emotions:
+        faceswap(i,filename)
+        print(i,"done")
+
+
 if __name__ == '__main__':
-    def faceswap(filter,emotion):
-        parser = argparse.ArgumentParser(description='FaceSwapApp')
-        #parser.add_argument('--src', required=True, help='Path for source image')
-        parser.add_argument('--dst', required=True, help='Path for target image')
-        parser.add_argument('--out', required=False, help='Path for storing output images')
-        parser.add_argument('--warp_2d', default=False, action='store_true', help='2d or 3d warp')
-        parser.add_argument('--correct_color', default=True, action='store_true', help='Correct color')
-        parser.add_argument('--no_debug_window', default=True, action='store_true', help='Don\'t show debug window')
-        args = parser.parse_args()
-
-        # Read images
-        cry_img = cv2.imread(filter)
-        #smile_img = 
-        #angry_img =
-        #smirk_img = 
-        dst_img = cv2.imread(args.dst)
-
-        # Select src face
-        src_points, src_shape, src_face = select_face(cry_img)
-        # Select dst face
-        dst_points, dst_shape, dst_face = select_face(dst_img)
-
-        w, h = dst_face.shape[:2]
-        
-        ### Warp Image
-        if not args.warp_2d:
-            ## 3d warp
-            warped_src_face = warp_image_3d(src_face, src_points[:48], dst_points[:48], (w, h))
-        else:
-            ## 2d warp
-            src_mask = mask_from_points(src_face.shape[:2], src_points)
-            src_face = apply_mask(src_face, src_mask)
-            # Correct Color for 2d warp
-            if args.correct_color:
-                warped_dst_img = warp_image_3d(dst_face, dst_points[:48], src_points[:48], src_face.shape[:2])
-                src_face = correct_colours(warped_dst_img, src_face, src_points)
-            # Warp
-            warped_src_face = warp_image_2d(src_face, transformation_from_points(dst_points, src_points), (w, h, 3))
-
-        ## Mask for blending
-        mask = mask_from_points((w, h), dst_points)
-        mask_src = np.mean(warped_src_face, axis=2) > 0
-        mask = np.asarray(mask*mask_src, dtype=np.uint8)
-
-        ## Correct color
-        if not args.warp_2d and args.correct_color:
-            warped_src_face = apply_mask(warped_src_face, mask)
-            dst_face_masked = apply_mask(dst_face, mask)
-            warped_src_face = correct_colours(dst_face_masked, warped_src_face, dst_points)
-        
-        ## Shrink the mask
-        kernel = np.ones((10, 10), np.uint8)
-        mask = cv2.erode(mask, kernel, iterations=1)
-        ##Poisson Blending
-        r = cv2.boundingRect(mask)
-        center = ((r[0] + int(r[2] / 2), r[1] + int(r[3] / 2)))
-        output = cv2.seamlessClone(warped_src_face, dst_face, mask, center, cv2.NORMAL_CLONE)
-
-        x, y, w, h = dst_shape
-        dst_img_cp = dst_img.copy()
-        dst_img_cp[y:y+h, x:x+w] = output
-        output = dst_img_cp
-
-        #dir_path = os.path.dirname(args.out)
-        #if not os.path.isdir(dir_path):
-           # os.makedirs(dir_path)
-
-        cv2.imwrite('results/output_'+emotion+'.jpg', output)
-
-        ##For debug
-        if not args.no_debug_window:
-            cv2.imshow("From", dst_img)
-            cv2.imshow("To", output)
-            cv2.waitKey(0)
-            
-            cv2.destroyAllWindows()
-    faceswap('assets/5.jpg','sad')
-    faceswap('assets/1.jpeg','smile')
-    faceswap('assets/2.jpeg','smirk')
-    faceswap('assets/4.jpg','sligthlysad')
-    faceswap('assets/3.jpg','poker')
+    # emotions = ['sad',
+    #             'smile',
+    #             'smirk',
+    #             'sligthlysad',
+    #             'poker']
+    # for i in tqdm.tqdm(emotions):
+    #     faceswap(i)
+    faceswap_all('sample.jpg')

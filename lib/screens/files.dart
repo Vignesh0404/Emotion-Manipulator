@@ -143,9 +143,8 @@ class PatientsList extends StatelessWidget {
                   String rmsDS =
                       document[i].data['rms digital scale'].toString();
                   String rmsPS =
-                      document[i].data['rms digital scale'].toString();
-                  String phnum =
                       document[i].data['rms ps scale score'].toString();
+                  String phnum = document[i].data['phnum'].toString();
                   String vpt = document[i].data['vpt scale score'].toString();
                   String fis = document[i].data['fis scale score'].toString();
                   String rmsBS = document[i].data['rms blind score'].toString();
@@ -244,13 +243,13 @@ class PatientsList extends StatelessWidget {
                                   child: Row(
                                     children: <Widget>[
                                       Text(
-                                        "Phone Num: ",
+                                        "Patient Id: ",
                                         style: TextStyle(
                                             fontFamily: 'Poppins',
                                             fontWeight: FontWeight.w300,
                                             fontSize: 12),
                                       ),
-                                      Text(phnum),
+                                      Text(id),
                                     ],
                                   ),
                                 ),

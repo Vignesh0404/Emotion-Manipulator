@@ -30,27 +30,58 @@ class _AddPatientState extends State<AddPatient> {
   String fis = '';
   String rmsBS = '';
   String uid;
+  String email;
+  Image sadImg;
+  Image smileImg;
+  Image smirkImg;
+  Image pokerImg;
+  Image sligthlysadImg;
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     FirebaseAuth.instance.currentUser().then((value) {
       setState(() {
-        this.uid = uid;
+        this.uid = value.uid;
+        this.email = value.email;
+        print(uid);
       });
+    }).catchError((e) {
+      print(e);
     });
+    // sadImg = Image.asset('faceswap/results/' + uid + '_input_sad.jpg',
+    //     fit: BoxFit.cover);
+    // smileImg = Image.asset('faceswap/results/' + uid + '_input_smile.jpg');
+    // smileImg = Image.asset('faceswap/results/' + uid + '_input_smirk.jpg');
+    // pokerImg = Image.asset('faceswap/results/' + uid + '_input_poker.jpg');
+    // sligthlysadImg =
+    //     Image.asset('faceswap/results/' + uid + '_input_sligthlysad.jpg');
+
+    // @override
+    // void didChangeDependencies(BuildContext context) {
+    //   precacheImage(sadImg.image, context);
+    //   super.didChangeDependencies();
+    // }
   }
 
   void _addData(BuildContext context) async {
-    String imgName = basename(widget.getImage.path);
+    //String imgName = basename(widget.getImage.path);
     StorageReference firebaseStorageRef =
-        FirebaseStorage.instance.ref().child("$name/" + imgName);
+        FirebaseStorage.instance.ref().child("$email/$name/" + 'input.jpg');
     StorageUploadTask uploadTask = firebaseStorageRef.putFile(widget.getImage);
     StorageTaskSnapshot taskSnapshot = await uploadTask.onComplete;
     final String url = await taskSnapshot.ref.getDownloadURL();
     String webUrl = url.toString();
     print('the url is $webUrl');
+
+    // StorageReference firebaseStorageRefSad =
+    //     FirebaseStorage.instance.ref().child("$email/$name/" + 'sad.jpg');
+    // StorageUploadTask uploadTaskSad = firebaseStorageRefSad
+    //     .putFile(('faceswap/results/' + uid + '_input_poker.jpg') as File);
+    // StorageTaskSnapshot taskSnapshotSad = await uploadTaskSad.onComplete;
+    // final String sadurl = await taskSnapshotSad.ref.getDownloadURL();
+    // String sadimg = sadurl.toString();
+    // print('the sad img url is $sadimg');
 
     var dbTimeKey = new DateTime.now();
     var formatDate = new DateFormat('MMM d,yyyy');
@@ -76,6 +107,7 @@ class _AddPatientState extends State<AddPatient> {
         'rms blind score': rmsBS,
         "uid": uid,
         "url": webUrl,
+        //"sadimg": sadimg,
         "date": date,
         "time": time
       });
@@ -115,32 +147,84 @@ class _AddPatientState extends State<AddPatient> {
           child: Column(
               //mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+                //sadImg,
                 Container(
-                  //color: Colors.orange,
-                  padding:
-                      EdgeInsets.symmetric(horizontal: 5.0, vertical: 20.0),
-                  height: MediaQuery.of(context).size.height * 0.25,
-                  width: double.infinity,
-                  child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 5,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          width: MediaQuery.of(context).size.width * 0.4,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                  image: FileImage(widget.getImage),
-                                  fit: BoxFit.cover),
-                              border: Border.all(
-                                  color: index % 2 == 0
-                                      ? Colors.black
-                                      : Color(0xFF6F6FA8),
-                                  width: 2.0)),
-                        );
-                      }),
+                  margin:
+                      EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
+                  height: 130,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: <Widget>[
+                      Container(
+                        width: 130,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                              image: AssetImage(
+                                  'faceswap/results/' + uid + '_input_sad.jpg'),
+                              fit: BoxFit.cover),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5.0,
+                      ),
+                      Container(
+                        width: 130,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                              image: AssetImage('faceswap/results/' +
+                                  uid +
+                                  '_input_smile.jpg'),
+                              fit: BoxFit.cover),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5.0,
+                      ),
+                      Container(
+                        width: 130,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                              image: AssetImage(
+                                  'faceswap/results/' + uid + '_input_sad.jpg'),
+                              fit: BoxFit.cover),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5.0,
+                      ),
+                      Container(
+                        width: 130,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                              image: AssetImage(
+                                  'faceswap/results/' + uid + '_input_sad.jpg'),
+                              fit: BoxFit.cover),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5.0,
+                      ),
+                      Container(
+                        width: 130,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          //borderRadius: BorderRadius.circular(5),
+                          image: DecorationImage(
+                              image: AssetImage(
+                                  'faceswap/results/' + uid + '_input_sad.jpg'),
+                              fit: BoxFit.fitHeight),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                    ],
+                  ),
                 ),
-                //SizedBox(height: 25.0),
                 Column(
                   children: <Widget>[
                     Stack(
