@@ -1,3 +1,4 @@
+cmake==0.7.1
 opencv-contrib-python == 4.4.0.42
 opencv-python == 4.4.0.42 
 dlib == 19.21.0
