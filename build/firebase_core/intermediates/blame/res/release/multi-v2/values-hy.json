@@ -1,0 +1,82 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/incremental/mergeReleaseResources/merged.dir/values-hy/values-hy.xml",
+            "map": [
+                {
+                    "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/345a9dd4c88a47501bcd99ac2657d4aa/jetified-play-services-basement-16.0.1/res/values-hy/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "209",
+                        "endOffsets": "456"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "209",
+                        "endOffsets": "310"
+                    }
+                },
+                {
+                    "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/values-hy/values-hy.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "315",
+                        "endColumns": "100",
+                        "endOffsets": "411"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_core/intermediates/res/merged/release/values-hy/values-hy.xml",
+            "map": [
+                {
+                    "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/345a9dd4c88a47501bcd99ac2657d4aa/jetified-play-services-basement-16.0.1/res/values-hy/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "209",
+                        "endOffsets": "456"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "209",
+                        "endOffsets": "310"
+                    }
+                },
+                {
+                    "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/values-hy/values-hy.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "315",
+                        "endColumns": "100",
+                        "endOffsets": "411"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -60,7 +60,7 @@ class _CameraState extends State<Camera> {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => AddPatient(
+          builder: (context) => Loading(
             getImage: image,
           ),
         )).then((value) => setState(() {}));
@@ -93,6 +93,7 @@ class _CameraState extends State<Camera> {
       });
       print(_image.path);
     }
+    sendImage();
   }
 
   Future galleryImage(context) async {
@@ -130,8 +131,10 @@ class _CameraState extends State<Camera> {
 
   Future sendImage() async {
     String base64Image = base64Encode(_image.readAsBytesSync());
-    Response response = await Dio()
-        .post("http://192.168.1.8:3008/api?uid=" + uid, data: base64Image);
+    Response response = await Dio().post(
+        "http://dental-rnd.herokuapp.com/api?uid=" + uid,
+        data: base64Image);
+
     print(response);
   }
 

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/shared_preferences/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/shared_preferences/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/shared_preferences/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/shared_preferences/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/shared_preferences/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/shared_preferences/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/layout/notification_action.xml"
+    }
+]

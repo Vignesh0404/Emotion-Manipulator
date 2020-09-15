@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dentalRnD/screens/camera.dart';
 import 'package:dentalRnD/widgets/navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -49,7 +50,49 @@ class _AddPatientState extends State<AddPatient> {
     });
   }
 
-  void _addData(BuildContext context) async {
+  void dialogBox(BuildContext context) async {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return Dialog(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0)), //this right here
+            child: Container(
+              height: 200,
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    TextField(
+                      decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: '       Yay, Patient Data Saved!',
+                          hintStyle: TextStyle(fontFamily: 'Poppins')),
+                    ),
+                    SizedBox(
+                      width: 320.0,
+                      child: RaisedButton(
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Text(
+                          "Done",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        color: Colors.black,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          );
+        });
+  }
+
+  Future _addData(BuildContext context) async {
     //String imgName = basename(widget.getImage.path);
     StorageReference firebaseStorageRef =
         FirebaseStorage.instance.ref().child("$email/$name/" + 'input.jpg');
@@ -93,6 +136,8 @@ class _AddPatientState extends State<AddPatient> {
         MaterialPageRoute(
           builder: (context) => Navigation(),
         ));
+
+    dialogBox(context);
   }
 
   @override
@@ -105,7 +150,8 @@ class _AddPatientState extends State<AddPatient> {
           elevation: 0.0,
           leading: IconButton(
             onPressed: () {
-              Navigator.of(context).pop();
+              Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new Camera()));
             },
             icon: Icon(
               Icons.arrow_back_ios,
@@ -115,7 +161,7 @@ class _AddPatientState extends State<AddPatient> {
           actions: <Widget>[
             IconButton(
                 icon: Icon(
-                  Icons.info,
+                  Icons.refresh,
                   color: Colors.black,
                   size: 30,
                 ),
@@ -140,8 +186,10 @@ class _AddPatientState extends State<AddPatient> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              image: AssetImage(
-                                  'faceswap/results/' + uid + '_input_sad.jpg'),
+                              image: NetworkImage(
+                                  'https://dental-rnd.herokuapp.com/static/' +
+                                      uid +
+                                      '_input_sad.jpg'),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -153,9 +201,10 @@ class _AddPatientState extends State<AddPatient> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              image: AssetImage('faceswap/results/' +
-                                  uid +
-                                  '_input_smile.jpg'),
+                              image: NetworkImage(
+                                  'https://dental-rnd.herokuapp.com/static/' +
+                                      uid +
+                                      '_input_poker.jpg'),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -167,9 +216,10 @@ class _AddPatientState extends State<AddPatient> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              image: AssetImage('faceswap/results/' +
-                                  uid +
-                                  '_input_smirk.jpg'),
+                              image: NetworkImage(
+                                  'https://dental-rnd.herokuapp.com/static/' +
+                                      uid +
+                                      '_input_smile.jpg'),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -181,9 +231,10 @@ class _AddPatientState extends State<AddPatient> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              image: AssetImage('faceswap/results/' +
-                                  uid +
-                                  '_input_poker.jpg'),
+                              image: NetworkImage(
+                                  'https://dental-rnd.herokuapp.com/static/' +
+                                      uid +
+                                      '_input_smirk.jpg'),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -196,10 +247,11 @@ class _AddPatientState extends State<AddPatient> {
                           shape: BoxShape.circle,
                           //borderRadius: BorderRadius.circular(5),
                           image: DecorationImage(
-                              image: AssetImage('faceswap/results/' +
-                                  uid +
-                                  '_input_sligthlysad.jpg'),
-                              fit: BoxFit.fitHeight),
+                              image: NetworkImage(
+                                  'https://dental-rnd.herokuapp.com/static/' +
+                                      uid +
+                                      '_input_sligthlysad.jpg'),
+                              fit: BoxFit.cover),
                         ),
                       ),
                       SizedBox(

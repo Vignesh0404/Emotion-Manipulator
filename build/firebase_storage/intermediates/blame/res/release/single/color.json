@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_tint.xml"
+    }
+]

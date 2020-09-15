@@ -57,15 +57,15 @@ def select_face(im, r=10):
 def faceswap(emotion, filename='sample.jpg'):
     parser = argparse.ArgumentParser(description='FaceSwapApp')
     #parser.add_argument('--src', required=True, help='Path for source image')
-    parser.add_argument('--dst', required=False, help='Path for target image')
-    parser.add_argument('--out', required=False,
-                        help='Path for storing output images')
+    #parser.add_argument('--dst', required=False, help='Path for target image')
+   # parser.add_argument('--out', required=False,
+                       # help='Path for storing output images')
     parser.add_argument('--warp_2d', default=False,
                         action='store_true', help='2d or 3d warp')
     parser.add_argument('--correct_color', default=True,
                         action='store_true', help='Correct color')
-    parser.add_argument('--no_debug_window', default=True,
-                        action='store_true', help='Don\'t show debug window')
+    #parser.add_argument('--no_debug_window', default=True,
+     #                   action='store_true', help='Don\'t show debug window')
     args = parser.parse_args()
     # filter
     if emotion=="sad":
@@ -135,14 +135,14 @@ def faceswap(emotion, filename='sample.jpg'):
     #if not os.path.isdir(dir_path):
     # os.makedirs(dir_path)
 
-    cv2.imwrite('results/'+filename[:-4]+'_'+emotion+'.jpg', output)
+    cv2.imwrite('static/'+filename[:-4]+'_'+emotion+'.jpg', output)
 
     ## For debug
-    if not args.no_debug_window:
-        cv2.imshow("From", dst_img)
-        cv2.imshow("To", output)
-        cv2.waitKey(0)       
-        cv2.destroyAllWindows()
+    # if not args.no_debug_window:
+    #     cv2.imshow("From", dst_img)
+    #     cv2.imshow("To", output)
+    #     cv2.waitKey(0)       
+    #     cv2.destroyAllWindows()
 
 # Driver for all faceswap
 def faceswap_all(filename):

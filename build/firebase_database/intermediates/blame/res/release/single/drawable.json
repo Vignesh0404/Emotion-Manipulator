@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/b82c1cd89117b9d39764c91626b16de1/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/home/vignesh/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/drawable/notification_bg.xml"
+    }
+]

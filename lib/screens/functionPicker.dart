@@ -12,8 +12,27 @@ class _FunctionPickerState extends State<FunctionPicker> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        leading: IconButton(
+            icon: Icon(
+              Icons.arrow_back_ios,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Navigator.of(context).pop();
+            }),
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(
+                Icons.info,
+                color: Colors.black,
+                size: 30,
+              ),
+              onPressed: () {})
+        ],
       ),
+      backgroundColor: Colors.white,
       body: GridView.count(
         crossAxisCount: 2, //1
         padding: EdgeInsets.all(16.0),
@@ -21,7 +40,31 @@ class _FunctionPickerState extends State<FunctionPicker> {
         crossAxisSpacing: 10.0,
         mainAxisSpacing: 10.0,
         children: <Widget>[
-          functionGrids('name', 'title', 'title2', 'image', 1, 2)
+          functionGrids('RMS', 'Digital', 'Scale', 'assets/function1.jpg',
+              0xFF5D5D8B, 0xFFE5E5EB),
+          functionGrids('RMS', 'Pictorial', 'Scale', 'assets/function1.jpg',
+              0xFF5D5D8B, 0xFFE5E5EB),
+          functionGrids('Venham Scale', 'title', 'title2',
+              'assets/function1.jpg', 0xFF5D5D8B, 0xFFE5E5EB),
+          functionGrids('Facial', 'Image', 'Scale', 'assets/function1.jpg',
+              0xFF5D5D8B, 0xFFE5E5EB),
+          functionGrids('RMS', 'Tactile', 'Scale', 'assets/function1.jpg',
+              0xFF5D5D8B, 0xFFE5E5EB),
+          FlatButton(
+              onPressed: () {
+                print('hi');
+              },
+              child: Container(
+                height: 40,
+                width: 130,
+                decoration: BoxDecoration(color: Color(0xFF7272A3)),
+                child: Center(
+                    child: Text(
+                  'Done',
+                  style: TextStyle(
+                      color: Colors.white, fontFamily: 'Poppins', fontSize: 18),
+                )),
+              ))
         ],
       ),
     );
@@ -44,7 +87,7 @@ class _FunctionPickerState extends State<FunctionPicker> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25.0),
                   image: DecorationImage(
-                      image: new NetworkImage(image), fit: BoxFit.fill)),
+                      image: new AssetImage(image), fit: BoxFit.cover)),
             ),
           ),
           Column(
