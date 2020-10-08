@@ -94,8 +94,10 @@ class _FilesState extends State<Files> {
               Stack(
                 children: <Widget>[
                   StreamBuilder(
-                      stream:
-                          Firestore.instance.collection("Patient").snapshots(),
+                      stream: Firestore.instance
+                          .collection("Patient")
+                          .where("uid", isEqualTo: uid)
+                          .snapshots(),
                       builder: (BuildContext context,
                           AsyncSnapshot<QuerySnapshot> snapshot) {
                         if (!snapshot.hasData)
@@ -152,6 +154,7 @@ class PatientsList extends StatelessWidget {
                   String date = document[i].data['date'].toString();
                   String time = document[i].data['time'].toString();
                   String uid = document[i].data['uid'].toString();
+                  String rmsPSg = document[i].data['rms ps girls'].toString();
 
                   //print(name);
                   return Dismissible(
@@ -175,6 +178,7 @@ class PatientsList extends StatelessWidget {
                             builder: (BuildContext context) => PatientDetails(
                                   name: name,
                                   id: id,
+                                  rmsPsg: rmsPSg,
                                   appNo: appNo,
                                   address: address,
                                   gender: gender,

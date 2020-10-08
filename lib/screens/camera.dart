@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'package:dentalRnD/screens/addPatient.dart';
 import 'package:dentalRnD/widgets/loading.dart';
+import 'package:dentalRnD/widgets/loadingImage.dart';
 import 'package:dentalRnD/widgets/navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -47,23 +48,17 @@ class _CameraState extends State<Camera> {
   String fileName;
   List<Filter> filters = presetFiltersList;
 
-  // Widget _refresh() {
-  //   Timer timer = new Timer.periodic(new Duration(seconds: 1), (time) {
-  //     if (mounted) setState(() {});
-  //   });
-  //   return Container();
-  // }
-
   Future passImage(BuildContext context) async {
+    sendImage();
     var image = _image;
     print(image);
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => Loading(
+          builder: (context) => LoadingImage(
             getImage: image,
           ),
-        )).then((value) => setState(() {}));
+        ));
   }
 
   Future cameraImage(context) async {
@@ -93,7 +88,7 @@ class _CameraState extends State<Camera> {
       });
       print(_image.path);
     }
-    sendImage();
+    //sendImage();
   }
 
   Future galleryImage(context) async {
@@ -126,7 +121,7 @@ class _CameraState extends State<Camera> {
       print(_image.path);
     }
 
-    sendImage();
+    //sendImage();
   }
 
   Future sendImage() async {
@@ -282,8 +277,39 @@ class _CameraState extends State<Camera> {
                     IconButton(
                         icon: Icon(Icons.arrow_forward),
                         onPressed: () async {
-                          //await sendImage();
-                          await passImage(context);
+                          _image == null
+                              ? showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return Dialog(
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                              20.0)), //this right here
+                                      child: Container(
+                                        height: 80,
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(12.0),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              TextField(
+                                                decoration: InputDecoration(
+                                                    border: InputBorder.none,
+                                                    hintText:
+                                                        '       Please select an Image!',
+                                                    hintStyle: TextStyle(
+                                                        fontFamily: 'Poppins')),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    );
+                                  })
+                              : await passImage(context);
                         }),
                     //_refresh(),
                   ],

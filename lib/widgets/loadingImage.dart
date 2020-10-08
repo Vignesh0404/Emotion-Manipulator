@@ -1,8 +1,11 @@
+import 'dart:io';
 import 'package:dentalRnD/screens/camera.dart';
+import 'package:dentalRnD/widgets/loading.dart';
 import 'package:flutter/material.dart';
 
 class LoadingImage extends StatefulWidget {
-  LoadingImage({Key key}) : super(key: key);
+  LoadingImage({this.getImage});
+  final File getImage;
 
   @override
   _LoadingImageState createState() => _LoadingImageState();
@@ -14,9 +17,13 @@ class _LoadingImageState extends State<LoadingImage> {
   void initState() {
     super.initState();
     new Future.delayed(
-        const Duration(seconds: 25),
+        const Duration(seconds: 49),
         () => Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Camera())));
+            context,
+            MaterialPageRoute(
+                builder: (context) => Loading(
+                      getImage: widget.getImage,
+                    ))));
   }
 
   Widget build(BuildContext context) {

@@ -23,6 +23,7 @@ class _AccountState extends State<Account> {
     }
   }
 
+  TextEditingController password = new TextEditingController();
   String uid;
   String email;
   @override
@@ -40,10 +41,53 @@ class _AccountState extends State<Account> {
     });
   }
 
+  void dialogBox(BuildContext context) async {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return Dialog(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0)), //this right here
+            child: Container(
+              height: 200,
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    TextField(
+                      decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: '                Coming Soon!',
+                          hintStyle: TextStyle(fontFamily: 'Poppins')),
+                    ),
+                    SizedBox(
+                      width: 320.0,
+                      child: RaisedButton(
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                        child: Text(
+                          "Done",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        color: Colors.black,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          );
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+          // resizeToAvoidBottomPadding: false,
           body: SafeArea(
         child: Column(
           children: <Widget>[
@@ -54,11 +98,14 @@ class _AccountState extends State<Account> {
                 children: <Widget>[
                   Row(
                     children: <Widget>[
-                      Text(
-                        email,
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
+                      email == null
+                          ? Text('error')
+                          : Text(
+                              email,
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold),
+                            ),
                       Spacer(),
                       IconButton(
                           icon: Icon(
@@ -66,13 +113,157 @@ class _AccountState extends State<Account> {
                             size: 18,
                             color: Colors.black,
                           ),
-                          onPressed: null)
+                          onPressed: () {
+                            showModalBottomSheet(
+                                context: context,
+                                builder: (BuildContext bc) {
+                                  return SingleChildScrollView(
+                                    child: Container(
+                                      height: 500,
+                                      child: Column(
+                                        children: <Widget>[
+                                          SizedBox(
+                                            height: 20,
+                                          ),
+                                          Text(
+                                            'Change Password',
+                                            style: TextStyle(
+                                                fontFamily: 'Poppins',
+                                                fontSize: 18),
+                                          ),
+                                          SizedBox(
+                                            height: 10,
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.all(8),
+                                            child: Column(
+                                              children: <Widget>[
+                                                TextField(
+                                                  controller: password,
+                                                  cursorColor: Colors.black,
+                                                  decoration: InputDecoration(
+                                                    hintText: 'Change Password',
+                                                    border: InputBorder.none,
+                                                    icon: Icon(
+                                                      Icons.security,
+                                                      color: Colors.black,
+                                                    ),
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  height: 10,
+                                                ),
+                                                FlatButton(
+                                                    onPressed: () async {
+                                                      try {
+                                                        FirebaseUser user =
+                                                            (await FirebaseAuth
+                                                                    .instance
+                                                                    .confirmPasswordReset(
+                                                                        'https://hotlunch-d92b1.firebaseapp.com/__/auth/action?mode=<action>&oobCode=<code>',
+                                                                        password
+                                                                            .text))
+                                                                as FirebaseUser;
+                                                        showDialog(
+                                                            context: context,
+                                                            builder:
+                                                                (BuildContext
+                                                                    context) {
+                                                              return Dialog(
+                                                                shape:
+                                                                    RoundedRectangleBorder(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              20.0),
+                                                                ),
+                                                                child:
+                                                                    Container(
+                                                                  height: 80,
+                                                                  child:
+                                                                      Padding(
+                                                                    padding: const EdgeInsets
+                                                                            .all(
+                                                                        12.0),
+                                                                    child:
+                                                                        Column(
+                                                                      mainAxisAlignment:
+                                                                          MainAxisAlignment
+                                                                              .center,
+                                                                      crossAxisAlignment:
+                                                                          CrossAxisAlignment
+                                                                              .start,
+                                                                      children: [
+                                                                        TextField(
+                                                                          decoration: InputDecoration(
+                                                                              border: InputBorder.none,
+                                                                              hintText: ' Your password is changed! ',
+                                                                              hintStyle: TextStyle(fontFamily: 'Poppins')),
+                                                                        ),
+                                                                      ],
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              );
+                                                            });
+                                                      } catch (e) {
+                                                        print('Error: $e');
+                                                        showDialog(
+                                                            context: context,
+                                                            builder: (context) {
+                                                              return AlertDialog(
+                                                                content: Text(
+                                                                    'This is the password currently been used'),
+                                                              );
+                                                            });
+                                                      }
+                                                    },
+                                                    child: Container(
+                                                      width: double.infinity,
+                                                      height: 40,
+                                                      //color: Colors.black,
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.black,
+                                                        shape:
+                                                            BoxShape.rectangle,
+                                                      ),
+                                                      child: Row(
+                                                        children: <Widget>[
+                                                          Text(
+                                                              "                                  "),
+                                                          Text(
+                                                            "Update   ",
+                                                            style: TextStyle(
+                                                                fontFamily:
+                                                                    "Poppins",
+                                                                fontSize: 16,
+                                                                color: Colors
+                                                                    .white),
+                                                          ),
+                                                          SizedBox(
+                                                            height: 5,
+                                                          ),
+                                                          Icon(
+                                                            Icons.arrow_forward,
+                                                            color: Colors.white,
+                                                          )
+                                                        ],
+                                                      ),
+                                                    ))
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  );
+                                });
+                          })
                     ],
                   ),
                   SizedBox(
                     height: 2,
                   ),
-                  Text('+918668088824')
                 ],
               ),
             ),
@@ -105,10 +296,15 @@ class _AccountState extends State<Account> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      'Help Center',
-                      style: TextStyle(
-                          fontFamily: 'Poppins', color: Colors.black87),
+                    GestureDetector(
+                      onTap: () {
+                        dialogBox(context);
+                      },
+                      child: Text(
+                        'Help Center',
+                        style: TextStyle(
+                            fontFamily: 'Poppins', color: Colors.black87),
+                      ),
                     ),
                     SizedBox(
                       height: 8,
@@ -140,10 +336,15 @@ class _AccountState extends State<Account> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      'About Us',
-                      style: TextStyle(
-                          fontFamily: 'Poppins', color: Colors.black87),
+                    GestureDetector(
+                      onTap: () {
+                        dialogBox(context);
+                      },
+                      child: Text(
+                        'About Us',
+                        style: TextStyle(
+                            fontFamily: 'Poppins', color: Colors.black87),
+                      ),
                     ),
                     SizedBox(
                       height: 8,
@@ -175,10 +376,15 @@ class _AccountState extends State<Account> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      'Contact Us',
-                      style: TextStyle(
-                          fontFamily: 'Poppins', color: Colors.black87),
+                    GestureDetector(
+                      onTap: () {
+                        dialogBox(context);
+                      },
+                      child: Text(
+                        'Contact Us',
+                        style: TextStyle(
+                            fontFamily: 'Poppins', color: Colors.black87),
+                      ),
                     ),
                     SizedBox(
                       height: 8,
@@ -254,10 +460,15 @@ class _AccountState extends State<Account> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      'Rate Us',
-                      style: TextStyle(
-                          fontFamily: 'Poppins', color: Colors.black87),
+                    GestureDetector(
+                      onTap: () {
+                        dialogBox(context);
+                      },
+                      child: Text(
+                        'Rate Us',
+                        style: TextStyle(
+                            fontFamily: 'Poppins', color: Colors.black87),
+                      ),
                     ),
                     SizedBox(
                       height: 8,
@@ -275,7 +486,13 @@ class _AccountState extends State<Account> {
               height: 18,
             ),
             FlatButton(
-              onPressed: signOut,
+              onPressed: () async {
+                signOut();
+                SharedPreferences prefs = await SharedPreferences.getInstance();
+                prefs.remove('isLoggedIn');
+                Navigator.of(context).push(new MaterialPageRoute(
+                    builder: (BuildContext context) => new LoginPage()));
+              },
               child: Text('Logout',
                   style: TextStyle(
                       fontFamily: 'Poppins',

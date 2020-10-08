@@ -16,6 +16,7 @@ class PatientDetails extends StatefulWidget {
       this.time,
       this.rmsBS,
       this.rmsDS,
+      this.rmsPsg,
       this.fis,
       this.vpt,
       this.rmsPS,
@@ -39,6 +40,7 @@ class PatientDetails extends StatefulWidget {
   final String fis;
   final String rmsBS;
   final String rmsPS;
+  final String rmsPsg;
   final index;
 
   @override
@@ -250,77 +252,20 @@ class _PatientDetailsState extends State<PatientDetails> {
                 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Container(
-                    margin:
-                        EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
-                    height: 130,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: <Widget>[
-                        Container(
-                          width: 130,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                                image: NetworkImage(widget.img),
-                                fit: BoxFit.cover),
-                          ),
+                    width: 170.0,
+                    height: 170.0,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: NetworkImage(widget.img),
+                          fit: BoxFit.cover,
                         ),
-                        SizedBox(
-                          width: 5.0,
-                        ),
-                        Container(
-                          width: 130,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                                image: NetworkImage(widget.img),
-                                fit: BoxFit.cover),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 5.0,
-                        ),
-                        Container(
-                          width: 130,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                                image: NetworkImage(widget.img),
-                                fit: BoxFit.cover),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 5.0,
-                        ),
-                        Container(
-                          width: 130,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                                image: NetworkImage(widget.img),
-                                fit: BoxFit.cover),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 5.0,
-                        ),
-                        Container(
-                          width: 130,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            //borderRadius: BorderRadius.circular(5),
-                            image: DecorationImage(
-                                image: NetworkImage(widget.img),
-                                fit: BoxFit.fitHeight),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                      ],
-                    ),
+                        border: Border.all(
+                          color: Colors.black,
+                        )),
                   ),
-                  SizedBox(height: 20.0),
+                  SizedBox(height: 30.0),
                   Padding(
                     padding: EdgeInsets.all(16),
                     child: Align(
@@ -388,7 +333,7 @@ class _PatientDetailsState extends State<PatientDetails> {
                                 ),
                               ),
                               Text(
-                                'RMS PS Scale: ' + widget.rmsPS + ' ,',
+                                'RMS PS Scale(boys): ' + widget.rmsPS + ' ,',
                                 style: TextStyle(
                                   fontFamily: 'Poppins',
                                 ),
@@ -398,11 +343,26 @@ class _PatientDetailsState extends State<PatientDetails> {
                           SizedBox(
                             height: 5,
                           ),
-                          Text(
-                            'RMS Blind Scale: ' + widget.rmsBS + '  ,',
-                            style: TextStyle(
-                              fontFamily: 'Poppins',
-                            ),
+                          Row(
+                            children: <Widget>[
+                              Text(
+                                'RMS PS Scale(girls): ' +
+                                    widget.rmsPsg +
+                                    '  , ',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                ),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                'RMS Blind Scale: ' + widget.rmsBS + '  ,',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                ),
+                              ),
+                            ],
                           ),
                           SizedBox(
                             height: 5,
@@ -424,13 +384,6 @@ class _PatientDetailsState extends State<PatientDetails> {
                             ],
                           ),
                           SizedBox(height: 20),
-                          Text(
-                            'Note,',
-                            style: TextStyle(
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20),
-                          )
                         ],
                       ),
                     ),

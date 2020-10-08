@@ -188,70 +188,78 @@
 115        </provider>
 116
 117        <activity
-117-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:24:9-31:50
-118            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-118-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:25:13-85
-119            android:excludeFromRecents="true"
-119-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:26:13-46
-120            android:exported="true"
-120-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:27:13-36
-121            android:launchMode="singleTask"
-121-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:28:13-44
-122            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-122-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:29:13-102
-123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-123-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:30:13-72
-124        <activity
-124-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:23:9-27:75
-125            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-125-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:24:13-93
-126            android:excludeFromRecents="true"
-126-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:25:13-46
-127            android:exported="false"
-127-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:26:13-37
-128            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-128-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:27:13-72
-129        <!--
-130            Service handling Google Sign-In user revocation. For apps that do not integrate with
-131            Google Sign-In, this service will never be started.
-132        -->
-133        <service
-133-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:33:9-37:51
-134            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-134-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:34:13-89
-135            android:exported="true"
-135-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:35:13-36
-136            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-136-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:36:13-107
-137            android:visibleToInstantApps="true" />
-137-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:37:13-48
-138
-139        <activity
-139-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-140            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-140-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-141            android:exported="false"
-141-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-142            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-142-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-143
-144        <provider
-144-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-145            android:name="com.google.firebase.provider.FirebaseInitProvider"
-145-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-146            android:authorities="com.example.dentalRnD.firebaseinitprovider"
-146-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-147            android:exported="false"
-147-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-148            android:initOrder="100" />
-148-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-149
-150        <meta-data
-150-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
-151            android:name="com.google.android.gms.version"
-151-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
-152            android:value="@integer/google_play_services_version" />
-152-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
-153    </application>
-154
-155</manifest>
+117-->[:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+118            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+118-->[:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+119            android:exported="false"
+119-->[:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+120            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+120-->[:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+121        <activity
+121-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:24:9-31:50
+122            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+122-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:25:13-85
+123            android:excludeFromRecents="true"
+123-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:26:13-46
+124            android:exported="true"
+124-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:27:13-36
+125            android:launchMode="singleTask"
+125-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:28:13-44
+126            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+126-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:29:13-102
+127            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+127-->[com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:30:13-72
+128        <activity
+128-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:23:9-27:75
+129            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+129-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:24:13-93
+130            android:excludeFromRecents="true"
+130-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:25:13-46
+131            android:exported="false"
+131-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:26:13-37
+132            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+132-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:27:13-72
+133        <!--
+134            Service handling Google Sign-In user revocation. For apps that do not integrate with
+135            Google Sign-In, this service will never be started.
+136        -->
+137        <service
+137-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:33:9-37:51
+138            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+138-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:34:13-89
+139            android:exported="true"
+139-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:35:13-36
+140            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+140-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:36:13-107
+141            android:visibleToInstantApps="true" />
+141-->[com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:37:13-48
+142
+143        <activity
+143-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+144            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+144-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+145            android:exported="false"
+145-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+146-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+147
+148        <provider
+148-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+149            android:name="com.google.firebase.provider.FirebaseInitProvider"
+149-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+150            android:authorities="com.example.dentalRnD.firebaseinitprovider"
+150-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+151            android:exported="false"
+151-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+152            android:initOrder="100" />
+152-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+153
+154        <meta-data
+154-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
+155            android:name="com.google.android.gms.version"
+155-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
+156            android:value="@integer/google_play_services_version" />
+156-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
+157    </application>
+158
+159</manifest>

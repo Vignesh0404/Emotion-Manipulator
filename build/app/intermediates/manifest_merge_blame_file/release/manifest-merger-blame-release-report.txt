@@ -225,31 +225,39 @@
 133        </provider>
 134
 135        <activity
-135-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-136            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-136-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+135-->[:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+136            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+136-->[:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
 137            android:exported="false"
-137-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-138            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-138-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-139
-140        <provider
-140-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-141            android:name="com.google.firebase.provider.FirebaseInitProvider"
-141-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-142            android:authorities="com.example.dentalRnD.firebaseinitprovider"
-142-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-143            android:exported="false"
-143-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-144            android:initOrder="100" />
-144-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-145
-146        <meta-data
-146-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
-147            android:name="com.google.android.gms.version"
-147-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
-148            android:value="@integer/google_play_services_version" />
-148-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
-149    </application>
-150
-151</manifest>
+137-->[:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+138            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+138-->[:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+139        <activity
+139-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+140            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+140-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+141            android:exported="false"
+141-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+142            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+142-->[com.google.android.gms:play-services-base:17.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+143
+144        <provider
+144-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+145            android:name="com.google.firebase.provider.FirebaseInitProvider"
+145-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+146            android:authorities="com.example.dentalRnD.firebaseinitprovider"
+146-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+147            android:exported="false"
+147-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+148            android:initOrder="100" />
+148-->[com.google.firebase:firebase-common:19.3.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/f66b3d10ee940d5cf50619c0757db268/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+149
+150        <meta-data
+150-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
+151            android:name="com.google.android.gms.version"
+151-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
+152            android:value="@integer/google_play_services_version" />
+152-->[com.google.android.gms:play-services-basement:17.1.1] /home/vignesh/.gradle/caches/transforms-2/files-2.1/ecc77589e48f58c4bd3638036a5f82da/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
+153    </application>
+154
+155</manifest>

@@ -25,25 +25,48 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Color(0xA60D79DD),
         body: Column(
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(top: 300.0),
               child: Center(
-                child: SvgPicture.asset('assets/sample_logo.svg'),
+                child: SvgPicture.asset('assets/sample_logo1.svg'),
               ),
             ),
             SizedBox(
-              height: 6,
+              height: 16,
             ),
             Center(
               child: Text(
-                'DENTAL RnD',
+                'RMS DIGITAL SCALE',
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white,
+                    fontFamily: 'Poppins'),
               ),
             ),
+            SizedBox(
+              height: 240,
+            ),
+            Center(
+              child: Column(
+                children: <Widget>[
+                  Text(
+                    'from',
+                    style:
+                        TextStyle(color: Colors.white, fontFamily: 'Poppins'),
+                  ),
+                  Text(
+                    'Dr. Shetty',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontFamily: 'Poppins'),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),

@@ -8,8 +8,10 @@ MERGED from [:firebase_auth] /home/vignesh/Documents/GitHub/Dental-RND/build/fir
 MERGED from [com.google.firebase:firebase-auth:19.3.2] /home/vignesh/.gradle/caches/transforms-2/files-2.1/2021c7345279486850c96e8a72733d48/firebase-auth-19.3.2/AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:17:1-40:12
 MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:2:1-15:12
+MERGED from [:sqflite] /home/vignesh/Documents/GitHub/Dental-RND/build/sqflite/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
 MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:2:1-22:12
 MERGED from [:flutter_plugin_android_lifecycle] /home/vignesh/Documents/GitHub/Dental-RND/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:2:1-14:12
 MERGED from [:webview_flutter] /home/vignesh/Documents/GitHub/Dental-RND/build/webview_flutter/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] /home/vignesh/Documents/GitHub/Dental-RND/build/path_provider/intermediates/library_manifest/release/AndroidManifest.xml:2:1-7:12
 MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:2:1-15:12
@@ -74,6 +76,8 @@ MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/
 MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:7:5-13:19
 MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:10:5-20:19
 MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:10:5-20:19
+MERGED from [:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:7:5-12:19
 MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_database] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:7:5-13:19
@@ -162,10 +166,14 @@ MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gr
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] /home/vignesh/.gradle/caches/transforms-2/files-2.1/61f438cda5b02665eca643cbda29ece3/play-services-auth-18.1.0/AndroidManifest.xml:20:5-44
 MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_storage] /home/vignesh/Documents/GitHub/Dental-RND/build/firebase_storage/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /home/vignesh/Documents/GitHub/Dental-RND/build/sqflite/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /home/vignesh/Documents/GitHub/Dental-RND/build/sqflite/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /home/vignesh/Documents/GitHub/Dental-RND/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /home/vignesh/Documents/GitHub/Dental-RND/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter] /home/vignesh/Documents/GitHub/Dental-RND/build/webview_flutter/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:webview_flutter] /home/vignesh/Documents/GitHub/Dental-RND/build/webview_flutter/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /home/vignesh/Documents/GitHub/Dental-RND/build/path_provider/intermediates/library_manifest/release/AndroidManifest.xml:5:5-44
@@ -352,6 +360,14 @@ ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image
 		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:18:17-72
 	android:name
 		ADDED from [:image_picker] /home/vignesh/Documents/GitHub/Dental-RND/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:17:17-67
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] /home/vignesh/Documents/GitHub/Dental-RND/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar
 ADDED from [:cloud_firestore] /home/vignesh/Documents/GitHub/Dental-RND/build/cloud_firestore/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
 	android:value

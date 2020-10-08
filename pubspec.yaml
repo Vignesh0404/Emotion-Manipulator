@@ -53,6 +53,9 @@ dev_dependencies:
   path: 
   dio: 
   path_provider: ^1.6.14  
+  url_launcher:
+  flutter_cache_manager: ^1.4.2
+  extended_image: 
   
 
 
