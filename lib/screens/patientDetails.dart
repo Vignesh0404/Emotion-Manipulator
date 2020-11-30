@@ -356,12 +356,12 @@ class _PatientDetailsState extends State<PatientDetails> {
                               SizedBox(
                                 height: 5,
                               ),
-                              Text(
-                                'RMS Blind Scale: ' + widget.rmsBS + '  ,',
-                                style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                ),
-                              ),
+                              // Text(
+                              //   'RMS Blind Scale: ' + widget.rmsBS + '  ,',
+                              //   style: TextStyle(
+                              //     fontFamily: 'Poppins',
+                              //   ),
+                              // ),
                             ],
                           ),
                           SizedBox(
@@ -383,7 +383,44 @@ class _PatientDetailsState extends State<PatientDetails> {
                               ),
                             ],
                           ),
-                          SizedBox(height: 20),
+                          SizedBox(height: 35),
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            height: 50,
+                            width: 300,
+                            child: FlatButton(
+                              onPressed: () {},
+                              child: Ink(
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(6.0),
+                                    gradient: LinearGradient(
+                                        begin: Alignment.centerLeft,
+                                        end: Alignment.centerRight,
+                                        colors: [
+                                          Color(0xA60D79DD),
+                                          Color(0xA60D79DD),
+                                          Color(0xFF1C63A1),
+                                        ])),
+                                child: Container(
+                                  alignment: Alignment.center,
+                                  constraints: BoxConstraints(
+                                      maxWidth: double.infinity, minHeight: 50),
+                                  child: Text(
+                                    "Retest RMS - DAS",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 24.0,
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(6.0)),
+                            ),
+                          ),
                         ],
                       ),
                     ),

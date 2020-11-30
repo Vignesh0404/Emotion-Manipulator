@@ -217,7 +217,7 @@ class _AddPatientState extends State<AddPatient> {
                               image: NetworkImage(
                                 'https://dental-rnd.herokuapp.com/static/' +
                                     uid +
-                                    '_input_sad.jpg?dummy=${counter++}',
+                                    '_input_smile.jpg?dummy=${counter++}',
                               ),
                               fit: BoxFit.cover),
                         ),
@@ -233,7 +233,7 @@ class _AddPatientState extends State<AddPatient> {
                               image: NetworkImage(
                                 'https://dental-rnd.herokuapp.com/static/' +
                                     uid +
-                                    '_input_poker.jpg?dummy=${counter++}',
+                                    '_input_smirk.jpg?dummy=${counter++}',
                               ),
                               fit: BoxFit.cover),
                         ),
@@ -249,7 +249,7 @@ class _AddPatientState extends State<AddPatient> {
                               image: NetworkImage(
                                   'https://dental-rnd.herokuapp.com/static/' +
                                       uid +
-                                      '_input_smile.jpg?dummy=${counter++}'),
+                                      '_input_poker.jpg?dummy=${counter++}'),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -264,7 +264,7 @@ class _AddPatientState extends State<AddPatient> {
                               image: NetworkImage(
                                   'https://dental-rnd.herokuapp.com/static/' +
                                       uid +
-                                      '_input_smirk.jpg?dummy=${counter++}'),
+                                      '_input_sligthlysad.jpg?dummy=${counter++}'),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -280,7 +280,7 @@ class _AddPatientState extends State<AddPatient> {
                               image: NetworkImage(
                                   'https://dental-rnd.herokuapp.com/static/' +
                                       uid +
-                                      '_input_sligthlysad.jpg?dummy=${counter++}'),
+                                      '_input_sad.jpg?dummy=${counter++}'),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -435,6 +435,7 @@ class _AddPatientState extends State<AddPatient> {
                                       border: InputBorder.none),
                                   style: TextStyle(color: Colors.black),
                                 ),
+
                                 //RMS DIGITAL SCALE
                                 Row(
                                   children: <Widget>[
@@ -458,6 +459,7 @@ class _AddPatientState extends State<AddPatient> {
                                         style: TextStyle(fontFamily: 'Poppins'),
                                       ),
                                     ),
+                                    Spacer(),
                                     IconButton(
                                         icon: Icon(Icons.add),
                                         color: Colors.black,
@@ -795,7 +797,8 @@ class _AddPatientState extends State<AddPatient> {
                                               );
                                             },
                                           );
-                                        })
+                                        }),
+                                    SizedBox(width: 18),
                                   ],
                                 ),
 
@@ -822,6 +825,7 @@ class _AddPatientState extends State<AddPatient> {
                                         style: TextStyle(fontFamily: 'Poppins'),
                                       ),
                                     ),
+                                    Spacer(),
                                     IconButton(
                                         icon: Icon(Icons.add),
                                         color: Colors.black,
@@ -831,7 +835,7 @@ class _AddPatientState extends State<AddPatient> {
                                             builder: (context) {
                                               return AlertDialog(
                                                 content: Container(
-                                                  height: 350,
+                                                  height: 500,
                                                   child: Column(
                                                     children: <Widget>[
                                                       Center(
@@ -841,6 +845,15 @@ class _AddPatientState extends State<AddPatient> {
                                                           fontFamily: 'Poppins',
                                                         ),
                                                       )),
+                                                      SizedBox(
+                                                        height: 25,
+                                                      ),
+                                                      Container(
+                                                          width:
+                                                              double.infinity,
+                                                          height: 110,
+                                                          child: Image.asset(
+                                                              'assets/rmspsb.jpg')),
                                                       SizedBox(
                                                         height: 25,
                                                       ),
@@ -1154,7 +1167,8 @@ class _AddPatientState extends State<AddPatient> {
                                               );
                                             },
                                           );
-                                        })
+                                        }),
+                                    SizedBox(width: 18),
                                   ],
                                 ),
 
@@ -1181,6 +1195,7 @@ class _AddPatientState extends State<AddPatient> {
                                         style: TextStyle(fontFamily: 'Poppins'),
                                       ),
                                     ),
+                                    Spacer(),
                                     IconButton(
                                         icon: Icon(Icons.add),
                                         color: Colors.black,
@@ -1190,7 +1205,7 @@ class _AddPatientState extends State<AddPatient> {
                                             builder: (context) {
                                               return AlertDialog(
                                                 content: Container(
-                                                  height: 350,
+                                                  height: 500,
                                                   child: Column(
                                                     children: <Widget>[
                                                       Center(
@@ -1200,6 +1215,15 @@ class _AddPatientState extends State<AddPatient> {
                                                           fontFamily: 'Poppins',
                                                         ),
                                                       )),
+                                                      SizedBox(
+                                                        height: 25,
+                                                      ),
+                                                      Container(
+                                                          width:
+                                                              double.infinity,
+                                                          height: 110,
+                                                          child: Image.asset(
+                                                              'assets/rmspsg.jpg')),
                                                       SizedBox(
                                                         height: 25,
                                                       ),
@@ -1513,7 +1537,8 @@ class _AddPatientState extends State<AddPatient> {
                                               );
                                             },
                                           );
-                                        })
+                                        }),
+                                    SizedBox(width: 18),
                                   ],
                                 ),
 
@@ -1540,6 +1565,7 @@ class _AddPatientState extends State<AddPatient> {
                                         style: TextStyle(fontFamily: 'Poppins'),
                                       ),
                                     ),
+                                    Spacer(),
                                     IconButton(
                                         icon: Icon(Icons.add),
                                         color: Colors.black,
@@ -1872,7 +1898,8 @@ class _AddPatientState extends State<AddPatient> {
                                               );
                                             },
                                           );
-                                        })
+                                        }),
+                                    SizedBox(width: 18),
                                   ],
                                 ),
 
@@ -1899,6 +1926,7 @@ class _AddPatientState extends State<AddPatient> {
                                         style: TextStyle(fontFamily: 'Poppins'),
                                       ),
                                     ),
+                                    Spacer(),
                                     IconButton(
                                         icon: Icon(Icons.add),
                                         color: Colors.black,
@@ -1908,7 +1936,7 @@ class _AddPatientState extends State<AddPatient> {
                                             builder: (context) {
                                               return AlertDialog(
                                                 content: Container(
-                                                  height: 350,
+                                                  height: 500,
                                                   child: Column(
                                                     children: <Widget>[
                                                       Center(
@@ -1918,6 +1946,15 @@ class _AddPatientState extends State<AddPatient> {
                                                           fontFamily: 'Poppins',
                                                         ),
                                                       )),
+                                                      SizedBox(
+                                                        height: 25,
+                                                      ),
+                                                      Container(
+                                                          width:
+                                                              double.infinity,
+                                                          height: 110,
+                                                          child: Image.asset(
+                                                              'assets/fis.jpg')),
                                                       SizedBox(
                                                         height: 25,
                                                       ),
@@ -2231,7 +2268,8 @@ class _AddPatientState extends State<AddPatient> {
                                               );
                                             },
                                           );
-                                        })
+                                        }),
+                                    SizedBox(width: 18),
                                   ],
                                 ),
 
@@ -2258,6 +2296,7 @@ class _AddPatientState extends State<AddPatient> {
                                         style: TextStyle(fontFamily: 'Poppins'),
                                       ),
                                     ),
+                                    Spacer(),
                                     IconButton(
                                         icon: Icon(Icons.add),
                                         color: Colors.black,
@@ -2575,7 +2614,8 @@ class _AddPatientState extends State<AddPatient> {
                                               );
                                             },
                                           );
-                                        })
+                                        }),
+                                    SizedBox(width: 18),
                                   ],
                                 ),
 

@@ -77,6 +77,7 @@ class _HomeState extends State<Home> {
           ],
         ),
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Stack(
               children: <Widget>[
@@ -116,8 +117,10 @@ class _HomeState extends State<Home> {
                         height: 10.0,
                       ),
                       Text(
-                        "lorem pisum asdasda",
+                        "- RMS-DAS, - FIS \n- RMS PS, - VPT Scale\n- Retest RMS-DAS",
                         style: TextStyle(
+                          letterSpacing: 2,
+                          wordSpacing: 2,
                           color: Colors.black,
                           fontSize: 12.0,
                           fontWeight: FontWeight.w200,
@@ -161,153 +164,90 @@ class _HomeState extends State<Home> {
               height: 25,
             ),
             Padding(
-                padding: const EdgeInsets.only(left: 15.0),
+                padding: const EdgeInsets.only(left: 13.0),
                 child: Align(
                   alignment: Alignment.bottomLeft,
-                  child: Text('Latest Articles',
+                  child: Text('About the Scales',
                       style: TextStyle(
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.bold,
                           fontSize: 20)),
                 )),
-            Stack(
-              children: <Widget>[
-                StreamBuilder(
-                    stream: Firestore.instance.collection('blog').snapshots(),
-                    builder: (BuildContext context,
-                        AsyncSnapshot<QuerySnapshot> snapshot) {
-                      if (!snapshot.hasData)
-                        return new Container(
-                          child: Center(
-                            child: Center(
-                              child: CircularProgressIndicator(),
-                            ),
-                          ),
-                        );
-                      return Padding(
-                        padding: EdgeInsets.only(top: 10),
-                        child: BlogDetails(document: snapshot.data.documents),
-                      );
-                    })
-              ],
+            Padding(
+              padding: EdgeInsets.only(left: 16, top: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text('RMS DIGITAL ANXIETY SCALE (RMS-DAS)',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w600,
+                          fontSize: 15)),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text('Comparison with',
+                      style:
+                          TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text('RMS PS',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14)),
+                  Text('FIS',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14)),
+                  Text('VPT SCALE',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14)),
+                  Text('Retest of RMS Digital Anxiety Scale (RMS-DAS)',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14)),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text('RMS DIGITAL CHILDREN DENTAL ANXIETY SCALE (RMS-DCDAS)',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w600,
+                          fontSize: 15)),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text('Comparison with',
+                      style:
+                          TextStyle(fontWeight: FontWeight.w800, fontSize: 14)),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text('RMS - DCDAS',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14)),
+                  Text('MCDAS',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14)),
+                  Text('RMS - DCDAS',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14)),
+                ],
+              ),
             )
           ],
         ));
-  }
-}
-
-class BlogDetails extends StatelessWidget {
-  const BlogDetails({this.document});
-  final List<DocumentSnapshot> document;
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 310,
-      child: ListView.builder(
-          itemCount: 2,
-          itemBuilder: (BuildContext context, int i) {
-            String heading = document[i].data['heading'].toString();
-            String body = document[i].data['body'].toString();
-            String img = document[i].data['img'].toString();
-            String link = document[i].data['link'].toString();
-            String citation = document[i].data['citation'].toString();
-            String date = document[i].data['date'].toString();
-
-            return Dismissible(
-                key: Key(document[i].documentID),
-                background: Container(color: Colors.red[100]),
-                onDismissed: (direction) {
-                  Firestore.instance.runTransaction((transaction) async {
-                    DocumentSnapshot snapshot =
-                        await transaction.get(document[i].reference);
-                    await transaction.delete(snapshot.reference);
-                  });
-
-                  Scaffold.of(context).showSnackBar(new SnackBar(
-                    content: new Text("Blog Deleted"),
-                    backgroundColor: Colors.black,
-                  ));
-                },
-                child: FlatButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => BlogPreview(
-                                heading: heading,
-                                body: body,
-                                date: date,
-                                citation: citation,
-                                img: img,
-                                link: link,
-                                index: document[i].reference,
-                              )));
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 18.0),
-                      child: Container(
-                        height: 140,
-                        width: double.infinity,
-                        color: Colors.white,
-                        child: Row(
-                          children: <Widget>[
-                            Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: GestureDetector(
-                                  onTap: () {
-                                    launch(link);
-                                  },
-                                  child: CircleAvatar(
-                                    backgroundColor: Colors.white,
-                                    backgroundImage: NetworkImage(img),
-                                    radius: 50,
-                                    //minRadius: 40,
-                                  ),
-                                )),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Text(
-                                  date + ' \u2022' + ' 10 mins read',
-                                  style: TextStyle(
-                                      color: i % 2 == 0
-                                          ? Colors.lightBlue
-                                          : Colors.lightGreen),
-                                ),
-                                SizedBox(
-                                  height: 6,
-                                ),
-                                Container(
-                                  width: 210,
-                                  child: Text(
-                                    heading + ',',
-                                    style: TextStyle(
-                                        letterSpacing: 1.5,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.black),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 6,
-                                ),
-                                Container(
-                                    width: 210,
-                                    height: 50,
-                                    child: Text(
-                                      body,
-                                    ))
-                              ],
-                            ),
-                            //Text(heading),
-                            //Text(body),
-                            //Text(citation)
-                          ],
-                        ),
-                      ),
-                    )));
-          }),
-    );
   }
 }
